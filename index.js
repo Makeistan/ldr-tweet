@@ -1,4 +1,8 @@
 require("./keys")
-var twitterClient = require("./twitter")
-var arduino = require("./arduino")(twitterClient)
+
+// twitterClient instantiate
+var twitterClient = require("./twitter") // twitterClient is the client through which we do twitter operations
+
+// instantiate the arduino board
+var arduino = require("./arduino")(twitterClient) // arduino boards control
 
